@@ -73,11 +73,11 @@ def xuat_file_word():
 # --- GIAO DIỆN WEB CẢI TIẾN (KHÔNG DÙNG FORM NHÓM) ---
 st.set_page_config(page_title="Lấy ý kiến Chi bộ", page_icon="☭", layout="centered")
 
-st.markdown('<p style="color:red; font-size:17px;"><b>☭ HỆ THỐNG THU THẬP Ý KIẾN CHI BỘ 5</b></p>', unsafe_allow_html=True)
-st.markdown('<p style="color:blue; font-size:15px;">Xin chào các đồng chí, vui lòng điền thông tin và đóng góp ý kiến xây dựng Chi bộ.</p>', unsafe_allow_html=True)
+st.markdown('<p style="color:red; font-size:17px;"><b>☭ HỆ THỐNG THU THẬP Ý KIẾN </b></p>', unsafe_allow_html=True)
+st.markdown('<p style="color:blue; font-size:15px;">Xin chào các đồng chí, vui lòng điền thông tin và ghi nhận sự việc mới.</p>', unsafe_allow_html=True)
 
 # Các ô nhập liệu độc lập
-danh_sach_mang = ["Công tác Đảng", "Chuyên môn", "Đoàn trường", "Giáo dục thể chất", "Tin học", "Văn phòng", "Ý kiến khác"]
+danh_sach_mang = ["Công tác Đảng", "Chuyên môn",  "Tin học", "Sự việc", "Các cuộc họp", "Vấn đề khác"]
 mang_selected = st.selectbox("1. Chọn Mảng/Bộ phận đóng góp ý kiến:", danh_sach_mang)
 
 ho_ten = st.text_input("2. Họ và tên (Có thể để trống để giữ bí mật danh tính):", key="input_hoten")
